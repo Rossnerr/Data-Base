@@ -31,6 +31,10 @@ according to the condition. Limited to(MB) option is used in order to specify th
 
 The last point of this task was to create a new filegroup for the secondary files, make it default and set autogrowth property to 64 MB and maximum size to 1024 MB. In order to create a new file group choose "Filegroups" option from the "New Database" window. In the "Rows" section press the "Add Filegroup" button. After I checked the "Default" box. This means that objects that will be created without a specified filegroup they will be attached to the default one. Just one filegroup can be set as a default one at a time.
 
+![Exercise 1.1](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%201.1.png)
+
+![Exercise 1.2](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%201.2.PNG)
+
 #### Task 2
 This task is similar to the previous one because a new database have to be created. In this database just the log file should be placed
 in another directory that's why only the log file's path shout be replaced. Also the logical name should be different from the file
@@ -38,8 +42,24 @@ name. So I changed the file name.
 
 Here there some extra options that should be confgured in a certain way. The created database should be compatible with "MS SQL Server 2017" and its access should be limited to a one user at a time. In order to realize these condition I chose "Options" section in the "New Database" window. After I set the compatibility level to the one mentioned in the conditions. In order to configure its access find the "Restrict Access" option and choose the Single-User mode.
 
+![Exercise 2.1](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%202.1.PNG)
+
+![Exercise 2.2](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%202.2.PNG)
+
 #### Task 3
 A database maintenance plan is a set of specific tasks that need to be performed regularly on databases to ensure their adequate performance and availability. There are 2 ways of creating a maintenance plan. You can do it with the help of the assistent or manually. I chose to do it with the assistent help. First of all I named my maintenance plan and schedule it accordingly to the task. This plan will be performed every friday at 00.00. Because the plan should erase the unused space when it grows up to 2000 MB I chose "Shrink Database" option as a maintenance task. After this I selected the option that gives the oportunity to return the freed space to the operating system. Also I chose to save the reports about executing this plan to a certain directory indicated in the task. I applied the maintenance plan created in task 3 to the database created in the task 1.
 
+![Exercise 3.1](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%203.1.PNG)
+
+![Exercise 3.2](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%203.2.PNG)
+
+![Exercise 3.3](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%203.3.PNG)
+
 #### Task 4
 This task is similar to the third one. The difference is that here I used more than one maintenance task in the same plan. The created plan was applied to the database created in the task 2. First of all I gave named this plan as it is mentioned in the task. This plan should perform 3 steps. First and second step are related to the same maintenance task and it is "Rebuild Index". Its purpose is to rebuild indexes from all the tables. Also the free space on the page should be changed to 10%. And the sort process of the indexes should take place in tempdb. After the rebuilding is done the statistics are colected. The third step is performed by the "Clean Up History" task. I used this task in order to clean up the Backup-Restore history. The history older than 6 weeks will be deleted according to my settings. I scheduled the plan to be executed in the first Sunday of the each month. It mean one Sunday in every 5 weeks. As in the previous task the report of the executed plan is saved in a certaind directory indicated in the task.
+
+![Exercise 4.1](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%204.1.PNG)
+
+![Exercise 4.2](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%204.2.PNG)
+
+![Exercise 4.3](https://github.com/Rossnerr/Data-Base/blob/master/Screens/Exercise%204.3.PNG)
