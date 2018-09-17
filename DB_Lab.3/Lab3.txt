@@ -1,7 +1,0 @@
-1)b)116,2
-DECIMAL(4,1):
-4 - nr. total de cifre
-1 - nr. de cifre dupa punctul zecimal
-
-2)DECIMAL(2,1)
-DECIMAL precedeaza tipul de date INT in SQL SERVER 2017.
