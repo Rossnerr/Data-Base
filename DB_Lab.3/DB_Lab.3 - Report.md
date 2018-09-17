@@ -10,6 +10,17 @@
 * Create, rename and update tables
 * SQL Server Data Types and Funtions
 
+### Tasks
+1. Which of the following numbers can be of the type DECIMAL(4,1)?
+  
+    a) 16,2; b) 116,2; c) 16,21; d) 1116,2; e) 1116,21.
+    
+2. Let's say [Col1] is of type INT and [Col2] is of type DECIMAL(2,1). What is the data type of the [Col3] if in [Col3] is stored the result of the foloowing expression [Col1] * [Col2]?
+
+3. Create a database called "universitatea". Within this database create 2 tables("grupe" and "discipline"). Their structure is presented below.
+
+4. Insert in the tables the information that corresponds to these records.
+
 ### Laboratory work implementation
 
 #### Task 1
