@@ -19,7 +19,15 @@
 
 3. Create a database called "universitatea". Within this database create 2 tables("grupe" and "discipline"). Their structure is presented below.
 
+![Task 3.1](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.3/Screens/Task%203.1.png)
+
+![Task 3.2](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.3/Screens/Task%203.2.png)
+
 4. Insert in the tables the information that corresponds to these records.
+
+![Task 4.1](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.3/Screens/Task%204.1.png)
+
+![Task 4.2](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.3/Screens/Task%204.2.png)
 
 ### Laboratory work implementation
 
