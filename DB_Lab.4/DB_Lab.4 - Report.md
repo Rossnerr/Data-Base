@@ -27,7 +27,8 @@ For solving this task I used just 1 INNER JOIN between studenti_reusita and prof
 #### Task 3
 This task was different from the the previous ones because it returns nothing and I used a subquerry in order to obtain a solution. By "returns nothing" I mean there are no such entries in the database that will satisfy the condition of the querry. The subquerry was used in order to find the students who have a mark greater than 5 at "Reusita curenta". Here I used 1 INNER JOIN between studenti and studenti_reusita tables. It was done Id_Student attributes. The students with a different id from those returned by the subquerry will be displayed.
 ![Task 3](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.4/Screens/Task3.PNG)
-
+In order to prove that the result presented above is correct I have created 2 separate queries. The first one displays the student's id and the number of disciplines he/she studies. The second one displays the student's id and the number of disciplines where he/she failed the "Reusita curenta". From the result of the first query is very easy to see that each student is studying 10 or 13 courses. But the number of failed courses from the second query is not even close to 10. This means that there are not such students in the database.
+![Task 3 Proof](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.4/Screens/Task3proof.PNG)
 
 ### Conclusion
 During this laboratory work I get introduced to T-SQL language. I learned how to create a query and which are its clauses. Queries can be of different dificulty level. The more complex queries use joins and aggreagation functions beside the regular clauses. Another important feature I have used in this laboratory work are the subqueries. Sometimes is much more easier to use a subquery beside multiple joins or other operations.  
