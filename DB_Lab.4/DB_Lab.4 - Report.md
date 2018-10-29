@@ -11,11 +11,11 @@
 * Elements of T-SQL and PL SQL/language
 
 ### Tasks
-10. Find the students who obtained a mark greater than 4 and less than 8 for the exam "examen" at the course called "Baza de date" in 2018. The result should contain student's last and first names.  
+10.Find the students who obtained a mark greater than 4 and less than 8 for the exam "examen" at the course called "Baza de date" in 2018. The result should contain student's last and first names.  
     
-22. Get the number of the courses taught by each teacher. The result should contain teacher's last name "Nume_Profesor" and first name "Prenume_Profesor".
+22.Get the number of the courses taught by each teacher. The result should contain teacher's last name "Nume_Profesor" and first name "Prenume_Profesor".
 
-33. Find the students' last name and first name who didn't get a pass mark which is considered to be greater than 5 for the сurrent situation "Reusita Curenta" at any course.   
+33.Find the students' last name and first name who didn't get a pass mark which is considered to be greater than 5 for the сurrent situation "Reusita Curenta" at any course.   
 
 ### Laboratory work implementation
 
