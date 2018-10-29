@@ -1,38 +1,23 @@
-# Laboratory Work Nr. 3
+# Laboratory Work Nr. 4
 
 ### Purpose of the laboratory
-* Table Creation
-* Table Modification
+* SELECT Instruction
+* TRANSACT-SQL
 
 ### Objectives
-* T-SQL and Oracle data types and built-in funtions
-* Constraints
-* Create, rename and update tables
-* SQL Server Data Types and Funtions
+* Elements of T-SQL and PL SQL/language
 
 ### Tasks
-1. Which of the following numbers can be of the type DECIMAL(4,1)?
-  
-    a) 16,2; b) 116,2; c) 16,21; d) 1116,2; e) 1116,21.
+1. Find the students who obtained a mark greater than 4 and less than 8 for the exam "examen" at the discipline called "Baza de date" in 2018. The result should contain student's last and first names.  
     
-2. Let's say [Col1] is of type INT and [Col2] is of type DECIMAL(2,1). What is the data type of the [Col3] if in [Col3] is stored the result of the foloowing expression [Col1] * [Col2]?
+2. Get the number of the discplines taught by each teacher. The result should contain teacher's last name "Nume_Profesor" and first name "Prenume_Profesor".
 
-3. Create a database called "universitatea". Within this database create 2 tables("grupe" and "discipline"). Their structure is presented below.
-
-![Task 3.1](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.3/Screens/Task%203.1.png)
-
-![Task 3.2](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.3/Screens/Task%203.2.png)
-
-4. Insert in the tables the information that corresponds to these records.
-
-![Task 4.1](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.3/Screens/Task%204.1.png)
-
-![Task 4.2](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.3/Screens/Task%204.2.png)
+3. Find the students' last name and first name who didn't get a pass mark which is considered to be greater than 5 for the сurrent situation "Reusita Curenta" at any discipline.   
 
 ### Laboratory work implementation
 
 #### Task 1
-The answer is: a) 16,2 and b) 116,2. DECIMAL(4,1) data type shows us that the field may contain 4 digits and 1 is the number of digits after decimal point.
+
 
 #### Task 2
 The answer is: DECIMAL(2,1). The first column accepts INT type and the second accepts DECIMAL(2,1) type. Taking in consideration the precedence rules the result should be of DECIMAL type. As we can see in the first column there are integers formed just from one digit and in the second column there are numbers that belongs to DECIMAL(2,1) type. The obtained result after multypling these 2 columns can be stored in a column with DECIMAL(2,1) data type.
