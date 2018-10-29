@@ -30,4 +30,4 @@ This task was different from the the previous ones because it returns nothing an
 
 
 ### Conclusion
-In this laboratory work I performed certain tasks while working with database tables. I learned how to create, modify and delete a table. In tables we can introduce data of different types. There are a lot of data types allowed to use in SQL Server 2017. In order to make sure that desired data was introduced we can apply the integrity constraints. They will help to keep our database safe. An important thing is the precedence rule that allows us to find out the type of the result while performing some calculations between different data types.
+During this laboratory work I get introduced to T-SQL language. I learned how to create a query and which are its clauses. Queries can be of different dificulty level. The more complex queries use joins and aggreagation functions beside the regular clauses. Another important feature I have used in this laboratory work are the subqueries. Sometimes is much more easier to use a subquery beside multiple joins or other operations.  
