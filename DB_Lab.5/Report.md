@@ -10,6 +10,9 @@
 
 ### Tasks
 1. Complete the following lines of code in order to find the largest number among those 3 which are given.
+
+![Task 1.1](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.5/Screens/Task1.1.PNG)
+
 2. Display the first ten students(First Name and Last Name) who took the Test 1 at Baze de date and get a mark different from 6 and 8. USE the IF...ELSE structure and variables.
 3. Solve the same task as in the first exercise but now using the CASE structure.
 4. Modify the task 1 and 2 so that you will be able process the errors by using TRY and CATCH and RAISERROR.
