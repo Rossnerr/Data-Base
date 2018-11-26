@@ -38,3 +38,30 @@ The 4th task asks us to add 2 secondary keys to the table _orarul_. In Microsoft
 ![Task 4.1](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.7/Screens/Task4.1.PNG)
 
 ![Task 4.2](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.7/Screens/Task4.2.PNG)
+
+#### Task 5
+Because no referential constraints were added to the table _orarul_. This task's purpose is to correct it. In the table _orarul_ there are 3 attributes which should create the link with other tables. They are: _Id_Disciplina_, _Id_Grupa_ and _Id_Profesor_. All these 3 will serve as FKs, while the PKs will be the same attributes but from different tables. After the settings of the keys are done the relationships will appear in the diagram. The diagram with the corresponding relationships is presented below.
+
+![Task 5](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.7/Screens/Task5.PNG)
+
+#### Task 6
+In contrast to the tasks analyzed above this one permits its execution not only by using SQL Server Management Studio Graphical Interface but also by using the T-SQL language. Between these two methods I choose the second one. So I created a query that creates 3 new schemes: _cadre_didactice_, _plan_studii_ and _studenti_. While creating a new schema is mandatory to give it a name and a owner. The other stuff is optional. In order to set a owner the AUTHORIZATION clause is used. It should be followed by owner's name. After the schemes had been made I transfered objects between the schemes accordingly to the condition. In order to transfer them I used the modifying clause ALTER SCHEMA and TRANSFER clause. After the first one the name of the destination scheme should be written. And after the second one the source scheme and the name of the object that should be transfered are specified. In the screen presented below are shown all the created schemas and the transfered objects.
+
+![Task6](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.7/Screens/Task6.PNG)
+
+#### Task 7
+In order to understand better how the schemes work and what are their purposes this task propose us to rewrite the queries created in the laboratory work nr. 4. Because some tables schemes are now different the name of the tables should now be written in an explicit way. Although the queries will not be executed because of not finding the object. The queries should output the same results. Results of the queries will be presented below. While the queries themselves can be found in _Querries_ folder.
+
+![Task 7.1](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.7/Screens/Task7.1.PNG)
+
+![Task 7.2](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.7/Screens/Task7.2.PNG)
+
+![Task 7.3](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.7/Screens/Task7.3.PNG)
+
+#### Task 8
+This task can bee seen as a simplified way of writing the queries from previous exercise. In order to avoid writing everytime those long names consisting from 2 parts: name of the tables and name of the schemes I created synonyms for them. A synonym is an object of a database which offers an alternative name for an already existing object. Now I can refer to the synonyms as to the original object. In order to create a synonym I used CREATE SYNONYM clause followed by the name of the synonym. Right after its name is specified FOR clause and the scheme together with the name of the object for which the synononym have to be created. After the synonyms are created the queries can be rewritten and now I can refert to the tables using the coresponding synonym. The results of the queries are the same. In the next screen all the created synonyms are shown.
+
+![Task 8](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.7/Screens/Task8.PNG)
+
+### Conclusion
+During this laboratory work I get familiar with a lot of useful notions while working with a database. I find out how to create a diagram, how to edit it and how to establish referencial constraints between its tables if they were not defined at the creation time. In order to limit the access of a user to the database objects the schemes can be used. I discovered how to create a scheme and how to transfer objects between the schemes. In order to make the process of writing queries simpler while the objects involved in them are from different schemes this laboratory work introduced me to such a notion called synonym. They can be used in order to refer to the same object but with an alternative name.
