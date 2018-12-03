@@ -1,0 +1,9 @@
+CREATE VIEW Task1_1 AS
+SELECT Nume_Profesor, Prenume_Profesor, COUNT(DISTINCT Id_Disciplina) AS Nr_Discipline_Predate
+FROM studenti.studenti_reusita
+INNER JOIN cadre_didactice.profesori
+ON studenti_reusita.Id_Profesor = profesori.Id_Profesor
+GROUP BY Nume_Profesor, Prenume_Profesor
+
+SELECT *
+FROM Task1_1
