@@ -16,6 +16,8 @@ which views are defined. Also the views should not accept DML operations in case
 6. There is a graph presented in the figure below. There is a need in traversing it from node 3 to node 0. Represent the graph traversal
 using the recursive common table expression.
 
+![Graph](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.8/Screens/Graph.PNG)
+
  ### Laboratory work implementation
 
 #### Task 1
