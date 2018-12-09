@@ -1,0 +1,34 @@
+USE universitatea
+GO
+DROP FUNCTION IF EXISTS dbo.Function_Task7
+GO
+CREATE FUNCTION dbo.Function_Task7(@Data_Nasterii_Student DATE)
+RETURNS SMALLINT
+AS
+BEGIN
+	DECLARE @Current_Date DATE
+	DECLARE @Birthday_Pass INT
+
+	SET @Current_Date = GETDATE()
+
+	IF MONTH(@Data_Nasterii_Student) >= MONTH(@Current_Date)
+	BEGIN
+		IF DAY(@Data_Nasterii_Student) > DAY(@Current_Date)
+		BEGIN
+			SET @Birthday_Pass = 1
+		END
+		ELSE
+		BEGIN
+			SET @Birthday_Pass = 0
+		END
+	END
+	ELSE
+	BEGIN
+		SET @Birthday_Pass = 0
+	END
+
+	RETURN(DATEDIFF(YEAR, @Data_Nasterii_Student, @Current_Date) - @Birthday_Pass)
+END
+
+SELECT Nume_Student, Prenume_Student, Data_Nastere_Student, dbo.Function_Task7(Data_Nastere_Student) AS Age
+FROM studenti.studenti
