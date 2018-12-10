@@ -83,3 +83,5 @@ WITH NORECOVERY
 ```
 
 ![Task4](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.11/Screens/Task4.PNG)
+
+![Task4_2](https://github.com/Rossnerr/Data-Base/blob/master/DB_Lab.11/Screens/Task4_2.PNG)
